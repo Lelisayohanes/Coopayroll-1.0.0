@@ -9,4 +9,6 @@ public interface IContactService {
     Optional<Contact> findByEmail(String email);
 
     Optional<Contact> findByPhone(String phone);
+
+    Contact saveEmployeeContact(Contact activeContact);
 }

@@ -43,7 +43,6 @@ public class CompanyProfileController {
         }
         CompanyProfileResponseDTO responseDTO = CompanyProfileResponseDTO.fromEntity(companyProfile);
         return ResponseEntity.ok(responseDTO);
-
     }
 
 

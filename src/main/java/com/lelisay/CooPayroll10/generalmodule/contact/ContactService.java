@@ -25,5 +25,10 @@ public class ContactService implements IContactService{
         return contactRepository.findByPhone(phone);
     }
 
+    @Override
+    public Contact saveEmployeeContact(Contact activeContact) {
+        return contactRepository.save(activeContact);
+    }
+
 
 }

@@ -2,6 +2,7 @@ package com.lelisay.CooPayroll10.companyportal.company;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.lelisay.CooPayroll10.companyportal.departmentdefinition.DepartmentDefinition;
 import com.lelisay.CooPayroll10.coremodule.subscription.invoice.Invoice;
 import com.lelisay.CooPayroll10.coremodule.subscription.payment.PaymentGateway;
 import com.lelisay.CooPayroll10.generalmodule.address.Address;
@@ -55,10 +56,14 @@ public class CompanyProfile {
     // Active Contact
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "active_contact_id")
-
     private Contact activeContact;
 
     // Previous Contact
     @OneToMany(mappedBy = "companyProfile", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Contact> previousContact;
+
+    //department
+    @OneToMany(mappedBy = "companyProfile")
+    private List<DepartmentDefinition> departmentDefinitions;
+
 }

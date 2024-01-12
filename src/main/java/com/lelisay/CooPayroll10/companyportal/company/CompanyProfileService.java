@@ -150,9 +150,7 @@ public class CompanyProfileService implements ICompanyProfileService {
         if (obj instanceof Collection) {
             return ((Collection<?>) obj).isEmpty();
         }
-
         // Add more checks for other types if needed...
-
         return false;
     }
 
@@ -346,4 +344,8 @@ public class CompanyProfileService implements ICompanyProfileService {
     public CompanyProfile getCompanyProfileByCompanyCode(String companyCode) {
         return companyProfileRepository.findByCompanyCode(companyCode);
     }
+
+
+
+
 }

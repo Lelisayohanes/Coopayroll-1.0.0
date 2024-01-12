@@ -33,7 +33,11 @@ public class UserRegistrationSecurityConfig {
             "/api/v1/roles/**",
             "/api/v1/subscription-plan/**",
             "/api/v1/company/**",
-            "api/v1/company/approve/**"
+            "api/v1/company/approve/**",
+            "/api/v1/employees/**",
+            "/api/v1/department_definition/**",
+            "/api/v1/grade_definition/**",
+            "/api/v1/position_definition/**"
     };
 
 

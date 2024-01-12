@@ -1,6 +1,7 @@
 package com.lelisay.CooPayroll10.generalmodule.address;
 
 import com.lelisay.CooPayroll10.companyportal.company.CompanyProfile;
+import com.lelisay.CooPayroll10.employeemodule.employee.Employee;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -21,8 +22,12 @@ public class Address {
 
     @ManyToOne
     @JoinColumn(name = "company_id")
-
     private CompanyProfile companyProfile;
 
     // Add meaningful comments here
+    @ManyToOne
+    @JoinColumn(name = "employee_id")
+    private Employee employee;
+
+
 }

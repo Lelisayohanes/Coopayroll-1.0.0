@@ -12,4 +12,9 @@ public class AddressService implements IAddressService {
     public Address addAddressOfCompany(Address address) {
         return addressRepository.save(address);
     }
+
+    @Override
+    public Address addEmployeeAddress(Address activeAddress) {
+        return addressRepository.save(activeAddress);
+    }
 }

@@ -50,4 +50,5 @@ public interface ICompanyProfileService {
     CompanyProfile findByCompanyCode(String companyCode);
 
     CompanyProfile getCompanyProfileByCompanyCode(String companyCode);
+
 }

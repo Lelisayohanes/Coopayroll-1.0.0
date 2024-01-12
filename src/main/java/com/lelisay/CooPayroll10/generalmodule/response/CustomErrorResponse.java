@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.time.LocalDateTime;
 
-public class CustomErrorResponse extends Throwable {
+public class CustomErrorResponse {
     @JsonProperty("statusCode")
     private int statusCode;
 
