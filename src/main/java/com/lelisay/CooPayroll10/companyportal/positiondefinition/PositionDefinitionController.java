@@ -66,5 +66,9 @@ public class PositionDefinitionController {
         }
     }
 
+    @PutMapping
+    public String newuser(){
+        return null;
+    }
 
 }
